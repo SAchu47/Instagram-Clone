@@ -1,0 +1,65 @@
+.post {
+  background-color: white;
+  /* max-width for container */
+  max-width: 500px;
+  border: 1px solid lightgray;
+  /* margin between every post */
+  margin-bottom: 45px;
+}
+
+.post__image {
+  width: 100%;
+  /* make image responise according to screen resolution */
+  object-fit: contain;
+  border-top: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
+}
+
+.post__text {
+  font-weight: normal;
+  padding: 20px;
+}
+
+.post__header {
+  /* flex brings row content flow*/
+  display: flex;
+  /* aligin in center of div */
+  align-items: center;
+  /* padding all around */
+  padding: 20px;
+}
+
+.post__avatar {
+  margin-right: 10px;
+}
+
+/* form add comments section */
+.post__commentBox {
+  display: flex;
+  margin-top: 10px;
+}
+
+/* tell flex child take more priority */
+.post__input {
+  flex: 1;
+  border: none;
+  padding: 10px;
+  border-top: 1px solid lightgray;
+}
+
+/* tell flex child take less priority */
+.post__button {
+  flex: 0;
+  padding: 10px;
+  color: #6082a3;
+  background-color: transparent;
+  border-top: 1px solid lightgray;
+}
+
+.post__comment {
+  padding: 20px;
+}
+
+.post__comments {
+  padding-top: 5px;
+}
